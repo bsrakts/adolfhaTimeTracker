@@ -1,4 +1,4 @@
-# Time Tracker App
+# adolfha TimeTracker App
 
 ## Overview
 **Time Tracker App** is a sophisticated web application designed to help users effectively manage and record their time. This application leverages React for its user interface, Supabase for backend services like database interactions and authentication, Tailwind CSS for responsive styling, Redux Toolkit for state management, and lucide-react for icons.
