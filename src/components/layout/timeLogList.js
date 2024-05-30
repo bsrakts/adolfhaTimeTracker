@@ -41,11 +41,15 @@ const TimeLogList = ({ logs }) => {
             >
               <div className="flex flex-col gap-y-2">
                 <p className="log-name font-extrabold text-xl capitalize text-stone-800 flex-wrap">
-                  {log.name || "Unnamed Task"}
+                  {log.name ||
+                    `Task-${logs.length > 0 ? logs.length + index : 1}`}
                 </p>
                 <p className="log-note text-sm flex items-center text-stone-600 flex-wrap">
                   <Pencil className="h-4" />
-                  {log.note || "No additional notes"}
+                  {log.note ||
+                    `${
+                      logs.length > 0 ? logs.length + index : 1
+                    }. task için not eklenmedi.`}
                 </p>
               </div>
               <div className="flex items-center gap-x-4">

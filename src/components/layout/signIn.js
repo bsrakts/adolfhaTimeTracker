@@ -76,13 +76,13 @@ const LoginForm = () => {
       <div className="lg:w-1/2 flex flex-col h-full justify-center items-center shadow-lg rounded-tr-3xl rounded-br-3xl shadow-pink-100">
         <form
           onSubmit={handleLogin}
-          className="flex flex-col justify-center lg:w-1/2 gap-y-4"
+          className="flex flex-col justify-center lg:w-1/2"
         >
           <div className="flex flex-col">
-            <h1 className="text-2xl w-full font-bold text-pink-800 text-center">
+            <h1 className="text-2xl w-full font-bold text-pink-800 text-center my-2">
               adolfha | Giriş Yap
             </h1>
-            <span className="text-sm text-neutral-400 text-center">
+            <span className="text-sm text-neutral-400 text-center mb-4">
               Hesabınıza giriş yapınız.
             </span>
           </div>
@@ -94,6 +94,9 @@ const LoginForm = () => {
             placeholder="Email"
             className=" border border-stone-200 py-2 px-3 rounded-full"
           />
+          <p className="text-xs text-neutral-400 italic ml-2 mb-3 mt-1">
+            Test kullanıcısı: test@test.com
+          </p>
           <input
             type="password"
             name="password"
@@ -102,6 +105,9 @@ const LoginForm = () => {
             placeholder="Password"
             className="border border-stone-200 py-2 px-3 rounded-full"
           />
+          <p className="text-xs text-neutral-400 italic ml-2 mb-2 mt-1">
+            Test şifresi: 123456
+          </p>
           <button
             type="submit"
             className="mt-4 bg-pink-900 font-semibold text-white rounded-full py-2 px-3 hover:shadow-lg hover:shadow-pink-200 transition-all duration-300 hover:transition-all hover:duration-300"
